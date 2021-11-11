@@ -22,6 +22,10 @@ body {
     padding-left: 5%;
 }
 
+.navbar-dark .navbar-toggler{
+    border: 1px solid rgb(37, 36, 36);
+}
+
 /* NAVBAR CSS BEGINS */
 
 .navbar-brand {
