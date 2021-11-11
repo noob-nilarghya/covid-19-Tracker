@@ -1,0 +1,164 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    /* background: linear-gradient(to left, #8942a8, #eb574d); */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Quicksand', sans-serif;
+    animation: change 10s ease-in-out infinite;
+}
+
+.header, .middle{
+    padding: 1.5% 4%;
+    padding-left: 5%;
+}
+
+/* NAVBAR CSS BEGINS */
+
+.navbar-brand {
+    font-weight: bolder;
+}
+
+.contact:hover {
+    outline: none;
+    box-shadow: inset 0 -2px 0 0 #e6f504;
+}
+
+@media only screen and (min-width: 992px) {
+    .form-control {
+        display: inline-block;
+        width: 78%;
+    }
+
+    .dropDownCentre {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .navbar-toggler {
+        margin-left: 39%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .form-control {
+        display: inline-block;
+        width: 79%;
+    }
+
+    .dropDownCentre {
+        text-align: center;
+    }
+}
+.btn-outline-success{
+    color:  #e6f504;
+    border-color: #e6f504;
+}
+.btn-outline-success:hover{
+    color: black;
+    background-color: #e6f504;
+}
+
+/* NAVBAR CSS ENDS */
+
+.logo{
+    width: 66px;
+    height: auto;
+}
+
+.intro {
+    font-size: 25px;
+    color: white;
+    padding-top: 3.5%;
+    text-align: center;
+}
+
+.info-hr, .info {
+    /* hr below temperature */
+    overflow: visible;
+    height: 30 px;
+    border-style: solid;
+    border-color: #a3b4d6;
+    border-width: 1 px 0 0 0;
+    border-radius: 20 px;
+    width: 55%;
+}
+
+.f-row-f-col {
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.f-row-s-col {
+    color: white;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.anime {
+    /* weather icon animation */
+    animation: iconAnime 1.2s linear infinite alternate;
+    width: 35%;
+    height: auto;
+}
+
+@keyframes iconAnime {
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.info {
+    font-size: 18px;
+    margin-left: 23%;
+}
+
+.footer {
+    padding-top: 3%;
+    text-align: center;
+    color: white;
+}
+
+.fb {
+    padding-right: 2%;
+    opacity: 0.8;
+}
+
+.insta {
+    padding-right: 2%;
+    opacity: 0.8;
+}
+
+.git {
+    padding-right: 2%;
+    opacity: 0.8;
+}
+
+.in {
+    opacity: 0.8;
+}
+
+.copy {
+    padding-top: 1.5%;
+}
+
+.copyright {
+    padding-top: 1%;
+    padding-bottom: 2%;
+}

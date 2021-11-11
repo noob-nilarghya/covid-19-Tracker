@@ -1,0 +1,71 @@
+<%- include("header") -%>
+
+    <!-- NAVBAR -->
+    <div class="header">
+        <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#"> <img src="image/corona.gif" alt="" class="logo"><%= title %></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse dropDownCentre" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link contact" href="https://gmail.com" target="_blank">Contact Me</a>
+                            <!-- target="_blank" is for opening the link in a new tab -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact" href="/compare"> &nbsp; Compare Data &nbsp;</a>
+                            <!-- target="_blank" is for opening the link in a new tab -->
+                        </li>
+                    </ul>
+                    <form class=" my-2 my-lg-0" action="/" method="post">
+                        <input class="form-control mr-sm-2 " type="text" placeholder="Search Country" aria-label="Search"
+                            name="newDesh" autocomplete="off">
+                        <button class="btn btn-outline-success my-2 my-sm-0 roundBox" type="submit"> <i
+                                class="fas fa-search"></i> </button>
+                    </form>
+                </div>
+            </nav>
+            <p class="intro">ᴛʜɪꜱ ᴡᴇʙꜱɪᴛᴇ ᴡɪʟʟ ɢɪᴠᴇ ʏᴏᴜ ʀᴇᴀʟ ᴛɪᴍᴇ ᴄᴏᴜɴᴛʀʏ ᴡɪꜱᴇ ᴄᴏᴠɪᴅ ʀᴇᴘᴏʀᴛ.</p>
+        </div>
+    </div>
+
+
+    <div class="middle">
+
+        <div class="row first-row">
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col1 f-row-f-col">
+                    <h3 style="padding-bottom: 4%;" class="desh"><%= desh %>, <%= Continent %> </h3>
+                    <img class="anime" src="<%=FlagIcon%>" alt="">
+                    <h3 style="padding-top: 4%;">Population: <%= Population %></h3>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col2 f-row-s-col">
+                    <h2>Information:</h2>
+                    <hr class="info-hr">
+                    <p class="info">Total Cases: <%= TotalCase %></p>
+                    <p class="info">Total Deaths: <%= TotalDeath %></p>
+                    <p class="info">Total Recovered: <%= TotalRecovered %> </p>
+                    <p class="info">Death Percentage: <%= DeathPercent %> %</p>
+                    <p class="info">Recovery Percentage: <%= RecoveryPercent %> %</p>
+                    <p class="info">Total active cases: <%= TotalActiveCase %> </p>
+                    <p class="info">Total critical case: <%= TotalCriticalCase %> </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+<%- include("footer") -%>
+    
