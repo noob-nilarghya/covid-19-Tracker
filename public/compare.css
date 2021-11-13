@@ -7,8 +7,7 @@ body {
 body {
     height: 100vh;
     /* background: linear-gradient(to left, #8942a8, #eb574d); */
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+    background: url(image/bg_compare2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,13 +22,15 @@ body {
 }
 
 .navbar-dark .navbar-toggler{
-    border: 1px solid rgb(37, 36, 36);
+    border: 1px solid #e6f504;
 }
 
 /* NAVBAR CSS BEGINS */
 
-.navbar-brand {
+.brand {
     font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact:hover {
@@ -60,10 +61,10 @@ body {
     border-color: white;
 }
 .ipBox1{
-    margin-right: 6%;
+    margin-right: 3%;
 }
 .ipBox2{
-    margin-left: 6%;
+    margin-left: 3%;
 }
 
 ::placeholder{

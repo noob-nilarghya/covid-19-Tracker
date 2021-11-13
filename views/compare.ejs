@@ -14,7 +14,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="compare.css">
-    <link rel="icon" href="Image/favicon.ico">
+    <link rel="icon" href="image/favicon.ico">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -36,7 +36,7 @@
         <div class="container-fluid">
 
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#"> <img src="image/corona.gif" alt="" class="logo"><%= title %></a>
+                <a class="navbar-brand brand" href="#"> <img src="image/logo.png" alt="" class="logo"><%= title %></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -55,16 +55,18 @@
                             <!-- target="_blank" is for opening the link in a new tab -->
                         </li>
                     </ul>
+    
                 </div>
             </nav>
-            <p class="intro">ᴛʜɪꜱ ᴡᴇʙꜱɪᴛᴇ ᴡɪʟʟ ᴛʀᴀᴄᴋ & ᴄᴏᴍᴘᴀʀᴇ ʟɪᴠᴇ ᴄᴏᴠɪᴅ ʀᴇᴘᴏʀᴛs ᴏꜰ 2 ᴄᴏᴜɴᴛʀɪᴇꜱ.</p>
+            <p class="intro"> <img src="image/live.png" alt=""> ᴛʀᴀᴄᴋ & ᴄᴏᴍᴘᴀʀᴇ ʟɪᴠᴇ ᴄᴏᴠɪᴅ ʀᴇᴘᴏʀᴛs ᴏꜰ 2 ᴄᴏᴜɴᴛʀɪᴇꜱ.</p>
         </div>
     </div>
 
 
     <div class="middle">
+
         <form class="compareForm" action="/compare" method="post">
-            <input class="ipBox1" type="text" placeholder="Search Country1" name="newDesh1" autocomplete="off"> <input class="ipBox2" type="text" placeholder="Search Country2" name="newDesh2" autocomplete="off">
+            <input class="ipBox1" type="text" placeholder="Country1" name="newDesh1" autocomplete="off"> <input class="ipBox2" type="text" placeholder="Country2" name="newDesh2" autocomplete="off">
             
             <button class="compareBTN" type="submit"> <i class="fas fa-search"></i> </button>
         </form>
@@ -109,17 +111,4 @@
 
     </div>
 
-    <!-- SOCIAL MEDIA, COPYRIGHT, CREDIT -->
-
-    <div class="footer">
-        <a href="https://facebook.com" target="_blank"> <img class="fb" src="image/facebook.png" alt=""></a>
-        <a href="https://instagram.com" target="_blank"><img class="insta" src="image/instagram.png" alt=""></a>
-        <a href="https://github.com/noob-nilarghya" target="_blank"> <img class="git" src="image/github.png" alt=""></a>
-        <a href="https://linkedin.com" target="_blank"><img class="in" src="image/linkedin.png" alt=""></a>
-        <p class="copyright"> © 2020-24 covid19Tracker.org | All right reserved.</p>
-    </div>
-
-
-</body>
-
-</html>
+<%- include("footer") -%>
