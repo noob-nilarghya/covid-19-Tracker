@@ -73,6 +73,10 @@ body {
     border: 1px solid #e6f504;
 }
 
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(image/search.png);
+}
+
 /* NAVBAR CSS ENDS */
 
 .logo{
